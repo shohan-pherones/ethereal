@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -54,7 +54,7 @@
         >
 
         <!-- NAV LINKS -->
-        <ul class="flex gap-5 items-center">
+        <ul class="gap-5 items-center hidden sm:flex">
           <li>
             <a
               href="#"
@@ -110,7 +110,9 @@
         <div
           class="w-full h-full z-[2] container py-20 flex flex-col items-center justify-center gap-5 text-center relative"
         >
-          <h1 class="text-7xl text-white font-semibold max-w-5xl">
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-semibold max-w-5xl"
+          >
             Unveiling Radiance in Our Exclusive 'For Her' Oasis
           </h1>
           <p class="text-gray max-w-6xl">
@@ -153,7 +155,7 @@
       </section>
 
       <!-- SERVICES -->
-      <section id="services" class="py-20 bg-cream">
+      <section id="services" class="pt-20 bg-cream">
         <!-- SECTION TITLE -->
         <div
           class="container text-center flex flex-col items-center gap-1.5 mb-10"
@@ -167,7 +169,7 @@
         </div>
 
         <!-- SERVICE WRAPPER -->
-        <div class="container grid grid-cols-3 gap-10">
+        <div class="container grid grid-cols-1 sm:grid-cols-3 gap-10 pb-20">
           <!-- SERVICE 1 -->
           <div class="flex flex-col gap-5 text-center items-center">
             <div class="h-40 w-40 rounded-full overflow-hidden">
@@ -282,10 +284,487 @@
             </div>
           </div>
         </div>
+
+        <!-- POPULAR SERVICES -->
+        <div class="py-20 bg-white">
+          <!-- SECTION TITLE -->
+          <div
+            class="container text-center flex flex-col items-center gap-1.5 mb-10"
+          >
+            <span class="uppercase text-gray font-semibold tracking-widest"
+              >Our popular services</span
+            >
+            <h3 class="text-4xl font-medium max-w-lg">
+              Memorable beauty experience
+            </h3>
+          </div>
+
+          <!-- POPULAR SERVICES WRAPPER -->
+          <div
+            class="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10"
+          >
+            <!-- POPULAR SERVICE 1 -->
+            <div class="flex flex-col gap-2.5 items-center text-center">
+              <div class="w-20 h-20 overflow-hidden">
+                <img
+                  src="./assets/images/popular-service-1.png"
+                  alt="PS 1"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h5 class="text-2xl">Essential Oils</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, odio.
+              </p>
+            </div>
+
+            <!-- POPULAR SERVICE 2 -->
+            <div class="flex flex-col gap-2.5 items-center text-center">
+              <div class="w-20 h-20 overflow-hidden">
+                <img
+                  src="./assets/images/popular-service-2.png"
+                  alt="PS 1"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h5 class="text-2xl">Essential Oils</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, odio.
+              </p>
+            </div>
+
+            <!-- POPULAR SERVICE 3 -->
+            <div class="flex flex-col gap-2.5 items-center text-center">
+              <div class="w-20 h-20 overflow-hidden">
+                <img
+                  src="./assets/images/popular-service-3.png"
+                  alt="PS 1"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h5 class="text-2xl">Essential Oils</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, odio.
+              </p>
+            </div>
+
+            <!-- POPULAR SERVICE 4 -->
+            <div class="flex flex-col gap-2.5 items-center text-center">
+              <div class="w-20 h-20 overflow-hidden">
+                <img
+                  src="./assets/images/popular-service-4.png"
+                  alt="PS 1"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <h5 class="text-2xl">Essential Oils</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, odio.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SERVICES BANNER -->
+        <div class="py-20 bg-white">
+          <div
+            class="container flex items-center justify-center xl:relative gap-10 flex-wrap"
+          >
+            <!-- BANNER -->
+            <div
+              class="w-[20rem] h-[20rem] xl:w-[30rem] xl:h-[30rem] overflow-hidden"
+            >
+              <img
+                src="./assets/images/service-banner.jpg"
+                alt="Service banner"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <!-- CTA -->
+            <div
+              class="xl:absolute top-10 right-[18%] w-[20rem] h-[20rem] bg-gradient-to-tl from-rose-500/80 to-pink-500/80 backdrop-blur-xl text-white p-10 flex flex-col gap-5 items-start justify-center"
+            >
+              <h5 class="text-2xl">Relax now!</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              <a
+                href="#services"
+                class="bg-transparent text-white px-5 py-3 rounded-full font-medium border-2 border-white hover:bg-cream transition duration-300 ease-in-out inline-block"
+                >Our Services</a
+              >
+            </div>
+
+            <!-- HOURS -->
+            <div
+              class="xl:absolute -bottom-10 left-[18%] w-[20rem] h-[20rem] bg-violet/80 backdrop-blur-xl p-10 flex flex-col justify-center items-start text-white gap-5"
+            >
+              <h5 class="text-2xl">Open hours</h5>
+              <p>Welcome to our amazing spa!</p>
+              <ul class="pl-7">
+                <li class="list-disc">Fri: Closed</li>
+                <li class="list-disc">Sat-Mon: 10AM - 6PM</li>
+                <li class="list-disc">Tue-Thur: 10AM - 8PM</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICES -->
+      <section id="prices" class="py-20 bg-stone-100 relative">
+        <!-- SECTION TITLE -->
+        <div
+          class="container text-center flex flex-col items-center gap-1.5 mb-10"
+        >
+          <span class="uppercase text-gray font-semibold tracking-widest"
+            >Service plans</span
+          >
+          <h3 class="text-4xl font-medium max-w-lg">Special pricing</h3>
+        </div>
+
+        <!-- PRICE WRAPPER -->
+        <div class="container grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
+          <!-- LEFT GRID ITEMS -->
+          <div class="flex flex-col gap-5">
+            <!-- ITEM 1 -->
+            <div class="flex gap-5">
+              <div class="w-full">
+                <div class="flex items-center gap-5">
+                  <h6 class="text-xl font-medium whitespace-nowrap">
+                    Full body massage
+                  </h6>
+                  <span class="w-full h-px border-b border-dashed"></span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Vero, temporibus!
+                </p>
+              </div>
+
+              <h6 class="text-xl font-medium">$50</h6>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="flex gap-5">
+              <div class="w-full">
+                <div class="flex items-center gap-5">
+                  <h6 class="text-xl font-medium whitespace-nowrap">
+                    Full body massage
+                  </h6>
+                  <span class="w-full h-px border-b border-dashed"></span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Vero, temporibus!
+                </p>
+              </div>
+
+              <h6 class="text-xl font-medium">$50</h6>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="flex gap-5">
+              <div class="w-full">
+                <div class="flex items-center gap-5">
+                  <h6 class="text-xl font-medium whitespace-nowrap">
+                    Full body massage
+                  </h6>
+                  <span class="w-full h-px border-b border-dashed"></span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Vero, temporibus!
+                </p>
+              </div>
+
+              <h6 class="text-xl font-medium">$50</h6>
+            </div>
+          </div>
+
+          <!-- RIGHT GRID ITEMS -->
+          <div class="flex flex-col gap-5">
+            <!-- ITEM 1 -->
+            <div class="flex gap-5">
+              <div class="w-full">
+                <div class="flex items-center gap-5">
+                  <h6 class="text-xl font-medium whitespace-nowrap">
+                    Full body massage
+                  </h6>
+                  <span class="w-full h-px border-b border-dashed"></span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Vero, temporibus!
+                </p>
+              </div>
+
+              <h6 class="text-xl font-medium">$50</h6>
+            </div>
+
+            <!-- ITEM 2 -->
+            <div class="flex gap-5">
+              <div class="w-full">
+                <div class="flex items-center gap-5">
+                  <h6 class="text-xl font-medium whitespace-nowrap">
+                    Full body massage
+                  </h6>
+                  <span class="w-full h-px border-b border-dashed"></span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Vero, temporibus!
+                </p>
+              </div>
+
+              <h6 class="text-xl font-medium">$50</h6>
+            </div>
+
+            <!-- ITEM 3 -->
+            <div class="flex gap-5">
+              <div class="w-full">
+                <div class="flex items-center gap-5">
+                  <h6 class="text-xl font-medium whitespace-nowrap">
+                    Full body massage
+                  </h6>
+                  <span class="w-full h-px border-b border-dashed"></span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Vero, temporibus!
+                </p>
+              </div>
+
+              <h6 class="text-xl font-medium">$50</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- LEAF -->
+        <div class="absolute left-0 bottom-0 w-80 h-80 opacity-10">
+          <img src="./assets/images/monstera.png" alt="Monstera" />
+        </div>
+      </section>
+
+      <!-- SHOP -->
+      <section id="shop" class="py-20 bg-white">
+        <!-- SECTION TITLE -->
+        <div
+          class="container text-center flex flex-col items-center gap-1.5 mb-10"
+        >
+          <span class="uppercase text-gray font-semibold tracking-widest"
+            >Our shop</span
+          >
+          <h3 class="text-4xl font-medium max-w-lg">Check our goods</h3>
+        </div>
+
+        <!-- PRODUCTS WRAPPER -->
+        <div
+          class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10"
+        >
+          <!-- ITEM 1 -->
+          <div class="w-full flex flex-col gap-5">
+            <div class="w-full h-[20rem] overflow-hidden">
+              <img
+                src="./assets/images/product-1.jpg"
+                alt="Product 1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="flex flex-col gap-1.5 items-center text-center">
+              <span class="uppercase font-medium text-cyan-500"
+                >Night, Simple, Young</span
+              >
+              <h5 class="text-2xl font-medium">Vitamin C serum</h5>
+              <h6 class="text-xl">$50</h6>
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="w-full flex flex-col gap-5">
+            <div class="w-full h-[20rem] overflow-hidden">
+              <img
+                src="./assets/images/product-2.jpg"
+                alt="Product 1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="flex flex-col gap-1.5 items-center text-center">
+              <span class="uppercase font-medium text-cyan-500"
+                >Night, Simple, Young</span
+              >
+              <h5 class="text-2xl font-medium">Vitamin C serum</h5>
+              <h6 class="text-xl">$50</h6>
+            </div>
+          </div>
+
+          <!-- ITEM 3 -->
+          <div class="w-full flex flex-col gap-5">
+            <div class="w-full h-[20rem] overflow-hidden">
+              <img
+                src="./assets/images/product-3.jpg"
+                alt="Product 1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="flex flex-col gap-1.5 items-center text-center">
+              <span class="uppercase font-medium text-cyan-500"
+                >Night, Simple, Young</span
+              >
+              <h5 class="text-2xl font-medium">Vitamin C serum</h5>
+              <h6 class="text-xl">$50</h6>
+            </div>
+          </div>
+
+          <!-- ITEM 4 -->
+          <div class="w-full flex flex-col gap-5">
+            <div class="w-full h-[20rem] overflow-hidden">
+              <img
+                src="./assets/images/product-4.jpeg"
+                alt="Product 1"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div class="flex flex-col gap-1.5 items-center text-center">
+              <span class="uppercase font-medium text-cyan-500"
+                >Night, Simple, Young</span
+              >
+              <h5 class="text-2xl font-medium">Vitamin C serum</h5>
+              <h6 class="text-xl">$50</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- BUTTON -->
+        <div class="mt-10 flex justify-center">
+          <button
+            class="h-32 w-32 bg-cream text-white p-5 rounded-full font-medium border-2 border-cream hover:bg-transparent transition duration-300 ease-in-out hover:text-cream"
+          >
+            View More
+          </button>
+        </div>
+      </section>
+
+      <!-- CTA BANNER -->
+      <section
+        class="h-[60vh] bg-no-repeat bg-center bg-cover bg-fixed relative"
+        style="background-image: url(./assets/images/cta-banner.jpg)"
+      >
+        <!-- OVERLAY -->
+        <div
+          class="absolute top-0 left-0 right-0 bottom-0 w-full h-full bg-gradient-to-t from-black/75 to-transparent z-[1]"
+        ></div>
+
+        <!-- CONTENTS -->
+        <div
+          class="w-full h-full z-[2] container py-20 flex flex-col items-center justify-center gap-5 text-center relative"
+        >
+          <span class="uppercase text-white font-semibold tracking-widest"
+            >Our Special Offer</span
+          >
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-semibold max-w-5xl"
+          >
+            An incredible spa experience
+          </h1>
+          <a
+            href="#appointment"
+            class="bg-violet text-white px-5 py-3 rounded-full font-medium hover:bg-cream transition duration-300 ease-in-out"
+            >Make an Appointment</a
+          >
+        </div>
+      </section>
+
+      <!-- APPOINTMENT -->
+      <section id="appointment" class="py-20 bg-stone-100">
+        <!-- APPOINTMENT WRAPPER -->
+        <div
+          class="container grid grid-cols-1 md:grid-cols-3 gap-10 justify-items-center text-center"
+        >
+          <!-- APPOINTMENT 1 -->
+          <div class="flex flex-col gap-5">
+            <h5 class="text-2xl font-medium">Open hours</h5>
+            <ul>
+              <li>Fri: Closed</li>
+              <li>Sat-Mon: 10AM - 6PM</li>
+              <li>Tue-Thur: 10AM - 8PM</li>
+            </ul>
+          </div>
+
+          <!-- APPOINTMENT 2 -->
+          <div class="flex flex-col gap-5">
+            <h5 class="text-2xl font-medium">Address</h5>
+            <div>
+              <p>
+                123 Main Street, Tokyo <br />
+                Japan-1100
+              </p>
+              <button class="underline">Check Location</button>
+            </div>
+          </div>
+
+          <!-- APPOINTMENT 3 -->
+          <div class="flex flex-col gap-5">
+            <h5 class="text-2xl font-medium">Get in touch</h5>
+            <div>
+              <p>Telephone: 123456789</p>
+              <p>Email: support@ethereal.com</p>
+              <button class="underline">Contact Form</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWSLETTER -->
+      <section class="py-20 bg-stone-100">
+        <!-- SECTION TITLE -->
+        <div
+          class="container text-center flex flex-col items-center gap-1.5 mb-10"
+        >
+          <span class="uppercase text-gray font-semibold tracking-widest"
+            >Newsletter</span
+          >
+          <h3 class="text-4xl font-medium max-w-lg">Want to get updates?</h3>
+        </div>
+
+        <form class="container max-w-2xl text-center flex flex-col gap-5">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad tempore
+            suscipit quae magnam perspiciatis. Magni explicabo ipsam natus.
+            Aliquam perferendis tempora adipisci odit nobis numquam saepe, nisi
+            soluta mollitia velit.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-5 items-center">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="w-full px-4 py-3 bg-transparent border-2 border-dashed border-cream rounded-xl outline-none"
+            />
+            <button
+              type="submit"
+              class="bg-violet rounded-xl px-5 py-4 uppercase text-white font-semibold tracking-widest hover:bg-cream transition duration-300 ease-in-out w-full"
+            >
+              Subscribe
+            </button>
+          </div>
+        </form>
       </section>
     </main>
 
     <!-- FOOTER -->
-    <footer></footer>
+    <footer class="py-10">
+      <p class="container text-cream text-lg text-center sm:text-left">
+        &copy; 2023, <span class="underline">Ethereal Spa</span>. All rights
+        reserved.
+      </p>
+    </footer>
   </body>
 </html>
